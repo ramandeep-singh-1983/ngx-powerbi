@@ -6,7 +6,14 @@ _\* Please mind that this README is a work in progress, i will try to create a s
 
 ## Installation
 
+This library has a peer dependency on the official Microsoft [powerbi-client](https://www.npmjs.com/package/powerbi-client) library so install that first:
 NPM:
+
+```
+npm install --save powerbi-client
+```
+
+Install the ngx-powerbi library:
 
 ```
 npm install --save ngx-powerbi
@@ -20,7 +27,25 @@ Here are some of the sample ways of embedding a Power BI report in your applicat
 
 **Method 1**
 
-Pick up and play: Use the included Power BI component directly in your component HTML file, sample code is given below:
+Pick up and play: Use the included Power BI component directly in your component HTML file.
+
+- **Import the 'NgxPowerBiModule' module inside your target module:**
+
+```
+import { NgxPowerBiModule } from 'ngx-powerbi';
+
+@NgModule({
+  imports: [
+    ...
+    ...
+    NgxPowerBiModule
+  ],
+  exports: ...,
+  declarations: ...
+})
+```
+
+Use the provided component attribute to embed a Power BI asset:
 
 ```
 <ngx-powerbi-component type="report"
@@ -59,22 +84,6 @@ If you want more fine-grain control of the embedding functionality, use the prov
 
 ```
 <div id="pbi-container"></div>
-```
-
-- **Import the 'NgxPowerBiModule' module inside your target module:**
-
-```
-import { NgxPowerBiModule } from 'ngx-powerbi';
-
-@NgModule({
-  imports: [
-    ...
-    ...
-    NgxPowerBiModule
-  ],
-  exports: ...,
-  declarations: ...
-})
 ```
 
 - **Import and instantiate the Power BI service in your component.ts file. Also, get a reference to the div we created in the component HTML file earlier:**
