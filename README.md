@@ -1,5 +1,11 @@
 # ngx-powerbi
 
+[![NPM Version](https://img.shields.io/npm/v/ngx-powerbi.svg)](https://www.npmjs.com/package/ngx-powerbi)
+
+<!--- [![NPM Total Downloads](https://img.shields.io/npm/dt/ngx-powerbi.svg)](https://www.npmjs.com/package/ngx-powerbi)
+[![GitHub issues](https://img.shields.io/github/issues-raw/badges/ngx-powerbi.svg)](https://github.com/ramandeep-singh-1983/ngx-powerbi/issues)
+--->
+
 TypeScript library for embedding Power BI assets (reports/dashboards/tiles) in your application. This TypeScript library is built on top of the official [powerbi-client](https://www.npmjs.com/package/powerbi-client) library provided by Microsoft.
 
 _\* Please mind that this README is a work in progress, i will try to create a sample application that utilizes this library and update this README accordingly._
