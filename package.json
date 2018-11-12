@@ -1,31 +1,55 @@
 {
-  "name": "ngx-powerbi",
-  "version": "2.0.0",
-  "description": "TypeScript library for embedding Power BI assets (reports/dashboards/tiles) in your application. This TypeScript library is built on top of the official powerbi-client library provided by Microsoft.",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ramandeep-singh-1983/ngx-powerbi"
+  "name": "pbi-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "build_lib": "ng build ngx-powerbi",
+    "npm_pack": "cd dist/ngx-powerbi && npm pack",
+    "package": "npm run build_lib && npm run npm_pack"
   },
-  "homepage" :"https://medium.com/@ramandeep.singh.1983/ngx-powerbi-a-basic-typescript-wrapper-library-for-power-bi-b056150b3f25",
-  "author": {
-    "name": "Ramandeep Singh",
-    "email": "ramandeep.singh.1983@gmail.com"
-  },
-  "keywords": [
-    "microsoft",
-    "powerbi",
-    "power-bi",
-    "embedded",
-    "angular",
-    "visuals",
-    "analytics",
-    "reports",
-    "reporting"
-  ],
-  "peerDependencies": {
+  "private": true,
+  "dependencies": {
+    "@angular-devkit/build-ng-packagr": "^0.10.5",
+    "@angular/animations": "^7.0.0",
     "@angular/common": "^7.0.0",
+    "@angular/compiler": "^7.0.0",
     "@angular/core": "^7.0.0",
-    "powerbi-client": "^2.6.5"
+    "@angular/forms": "^7.0.0",
+    "@angular/http": "^7.0.0",
+    "@angular/platform-browser": "^7.0.0",
+    "@angular/platform-browser-dynamic": "^7.0.0",
+    "@angular/router": "^7.0.0",
+    "core-js": "^2.5.4",
+    "ng-packagr": "^4.4.0",
+    "powerbi-client": "^2.6.5",
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.26"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular/cli": "~7.0.5",
+    "@angular/compiler-cli": "^7.0.0",
+    "@angular/language-service": "^7.0.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.3.0",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "ts-node": "~7.0.0",
+    "tsickle": "0.33.1",
+    "tslint": "~5.11.0",
+    "typescript": "~3.1.6"
   }
 }
