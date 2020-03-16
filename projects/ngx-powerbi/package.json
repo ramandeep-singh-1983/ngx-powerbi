@@ -12,6 +12,9 @@
     "name": "Ramandeep Singh",
     "email": "ramandeep.singh.1983@gmail.com"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "microsoft",
     "powerbi",
