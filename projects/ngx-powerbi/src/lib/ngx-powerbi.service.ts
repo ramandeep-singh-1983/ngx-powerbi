@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional } from '@angular/core';
 import {
   Embed,
   factories,
@@ -24,7 +24,7 @@ export function powerBiServiceFactory() {
 export class NgxPowerBiService {
   private powerBiCoreService: pbiService.Service;
 
-  constructor(private service?: pbiService.Service) {
+  constructor(@Optional() private service?: pbiService.Service) {
     if (!service) {
       this.powerBiCoreService = new pbiService.Service(
         factories.hpmFactory,

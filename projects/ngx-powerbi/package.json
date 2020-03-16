@@ -24,8 +24,9 @@
     "reporting"
   ],
   "peerDependencies": {
-    "@angular/common": "^7.0.0",
-    "@angular/core": "^7.0.0",
-    "powerbi-client": "^2.6.5"
+    "@angular/common": "^9.0.6",
+    "@angular/core": "^9.0.6",
+    "powerbi-client": "^2.6.5",
+    "tslib": "^1.10.0"
   }
 }
