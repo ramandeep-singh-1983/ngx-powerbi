@@ -5,7 +5,7 @@ import {
   IEmbedConfiguration,
   Report,
   service as pbiService,
-  Tile,
+  Tile
 } from 'powerbi-client';
 import { IEvent } from 'service';
 
