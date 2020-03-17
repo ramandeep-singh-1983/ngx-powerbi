@@ -7,7 +7,6 @@ import {
   service as pbiService,
   Tile
 } from 'powerbi-client';
-import { IEvent } from 'service';
 
 export function powerBiServiceFactory() {
   return new pbiService.Service(
@@ -122,7 +121,7 @@ export class NgxPowerBiService {
    *
    * @param IEvent<any> event
    */
-  handleTileEvents(event: IEvent<any>): void {
+  handleTileEvents(event: pbiService.IEvent<any>): void {
     return this.powerBiCoreService.handleTileEvents(event);
   }
 
