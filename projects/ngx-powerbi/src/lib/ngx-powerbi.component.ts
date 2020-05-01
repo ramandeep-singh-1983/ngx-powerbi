@@ -5,7 +5,7 @@ import {
   Input,
   OnChanges,
   OnDestroy,
-  OnInit,
+  AfterViewInit,
   Output,
   SimpleChanges,
   ViewChild,
@@ -31,7 +31,7 @@ export const enum ReportType {
   template: '<div #ngxPowerBiIFrame style="height:100%; width: 100%;"></div>',
   styles: []
 })
-export class NgxPowerBiComponent implements OnInit, OnChanges, OnDestroy {
+export class NgxPowerBiComponent implements AfterViewInit, OnChanges, OnDestroy {
   // Public properties
   @Input() accessToken: string;
   @Input() tokenType: TokenType;
@@ -41,7 +41,7 @@ export class NgxPowerBiComponent implements OnInit, OnChanges, OnDestroy {
   @Input() name: string;
   @Input() options: models.ISettings;
   @Output() embedded = new EventEmitter<number>();
-  @ViewChild('ngxPowerBiIFrame') ngxPowerBiIFrameRef: ElementRef;
+  @ViewChild('ngxPowerBiIFrame', {static: true}) ngxPowerBiIFrameRef: ElementRef;
 
   // Private fields
   private component: pbi.Embed;
@@ -51,7 +51,7 @@ export class NgxPowerBiComponent implements OnInit, OnChanges, OnDestroy {
     this.powerBiService = ngxPowerBiService;
   }
 
-  ngOnInit() {
+  ngAfterViewInit() {
     // Embed the report inside the view child that we have fetched from the DOM
     if (
       this.ngxPowerBiIFrameRef.nativeElement &&
@@ -62,6 +62,9 @@ export class NgxPowerBiComponent implements OnInit, OnChanges, OnDestroy {
   }
 
   ngOnChanges(changes: SimpleChanges) {
+    if (!this.ngxPowerBiIFrameRef) {
+      return;
+    }
     const {
       accessToken,
       tokenType,

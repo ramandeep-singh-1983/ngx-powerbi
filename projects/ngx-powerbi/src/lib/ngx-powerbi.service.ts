@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Optional } from '@angular/core';
 import {
   Embed,
   factories,
   IEmbedConfiguration,
   Report,
   service as pbiService,
-  Tile,
+  Tile
 } from 'powerbi-client';
-import { IEvent } from 'service';
 
 export function powerBiServiceFactory() {
   return new pbiService.Service(
@@ -24,7 +23,7 @@ export function powerBiServiceFactory() {
 export class NgxPowerBiService {
   private powerBiCoreService: pbiService.Service;
 
-  constructor(private service?: pbiService.Service) {
+  constructor(@Optional() private service?: pbiService.Service) {
     if (!service) {
       this.powerBiCoreService = new pbiService.Service(
         factories.hpmFactory,
@@ -122,7 +121,7 @@ export class NgxPowerBiService {
    *
    * @param IEvent<any> event
    */
-  handleTileEvents(event: IEvent<any>): void {
+  handleTileEvents(event: pbiService.IEvent<any>): void {
     return this.powerBiCoreService.handleTileEvents(event);
   }
 
