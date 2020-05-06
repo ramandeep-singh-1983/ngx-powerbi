@@ -7,7 +7,7 @@ TypeScript library for embedding Power BI assets (reports/dashboards/tiles) in y
 
 ## Installation
 
-This library has a peer dependency on the official Microsoft [powerbi-client](https://www.npmjs.com/package/powerbi-client) library so install that first:
+This library has a peer dependency on the official Microsoft [powerbi-client](https://www.npmjs.com/package/powerbi-client) library so the same should be installed first:
 NPM:
 
 ```
