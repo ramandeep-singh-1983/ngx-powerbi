@@ -5,8 +5,6 @@
 
 TypeScript library for embedding Power BI assets (reports/dashboards/tiles) in your application. This TypeScript library is built on top of the official [powerbi-client](https://www.npmjs.com/package/powerbi-client) library provided by Microsoft.
 
-_\* Please mind that this README is a work in progress, i will try to create a sample application that utilizes this library and update this README accordingly._
-
 ## Installation
 
 This library has a peer dependency on the official Microsoft [powerbi-client](https://www.npmjs.com/package/powerbi-client) library so the same should be installed first:
@@ -195,3 +193,9 @@ The Power BI embedding functionality requires an access token to the Power BI Pr
 ## References
 
 This TypeScript library is built on top of the official [powerbi-client](https://www.npmjs.com/package/powerbi-client) library provided by Microsoft and references some code from [PowerBI-Angular2](https://github.com/diego-d5000/PowerBI-Angular2) library.
+
+## Donate
+
+- **Paypal**: https://www.paypal.me/ramsi1983
+
+- **Crypto**: Ethereum wallet address: 0xBeA952fc85c084C298CB3aC0cE198dD389488CB9

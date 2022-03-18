@@ -3,6 +3,6 @@
   "angularCompilerOptions": {
     "annotateForClosureCompiler": true,
     "fullTemplateTypeCheck": true,
-    "enableIvy": true
+    "compilationMode": "partial"
   }
 }
