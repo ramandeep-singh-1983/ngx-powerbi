@@ -161,7 +161,6 @@
       }
     }
   },
-  "defaultProject": "pbi-app",
   "cli": {
     "analytics": "baddc8f6-b938-46d5-91d1-ce8e184b6a06"
   }
