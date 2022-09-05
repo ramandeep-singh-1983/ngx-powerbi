@@ -1,6 +1,6 @@
 {
   "name": "ngx-powerbi",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "TypeScript library for embedding Power BI assets (reports/dashboards/tiles) in your application. This TypeScript library is built on top of the official powerbi-client library provided by Microsoft.",
   "license": "MIT",
   "repository": {
@@ -30,8 +30,8 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^13.2.5",
-    "@angular/core": "^13.2.5",
+    "@angular/common": "^14.1.0",
+    "@angular/core": "^14.1.0",
     "powerbi-client": "^2.19.1"
   }
 }
