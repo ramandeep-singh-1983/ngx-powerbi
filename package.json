@@ -1,6 +1,6 @@
 {
   "name": "pbi-app",
-  "version": "5.0.1",
+  "version": "4.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
