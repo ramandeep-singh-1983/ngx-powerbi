@@ -27,6 +27,7 @@
     },
     "useDefineForClassFields": false
   },
+  "exclude": ["node_modules"],
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true

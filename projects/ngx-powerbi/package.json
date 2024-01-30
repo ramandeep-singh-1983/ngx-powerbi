@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/ramandeep-singh-1983/ngx-powerbi"
   },
-  "homepage" :"https://medium.com/@ramandeep.singh.1983/ngx-powerbi-a-basic-typescript-wrapper-library-for-power-bi-b056150b3f25",
+  "homepage": "https://medium.com/@ramandeep.singh.1983/ngx-powerbi-a-basic-typescript-wrapper-library-for-power-bi-b056150b3f25",
   "author": {
     "name": "Ramandeep Singh",
     "email": "ramandeep.singh.1983@gmail.com"
@@ -30,8 +30,8 @@
     "tslib": "^2.0.0"
   },
   "peerDependencies": {
-    "@angular/core": "^17.1.1",
     "@angular/common": "^17.1.1",
+    "@angular/core": "^17.1.1",
     "powerbi-client": "^2.22.3"
   }
 }
